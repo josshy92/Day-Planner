@@ -3,21 +3,12 @@
 2. Make variables to select html 
 3. Attach moment.js to html to be able to  use timer
 4. make function that will have timer
-5. change timer format to DayofWeek, Month Number Day*/
+5. change timer format*/
 
 $(document).ready(function () {
 
 
     var currentDate = $("#time")
-
-
-    // function currentTime() {
-    //     var dayOfMonth = moment().format("dddd MMMM, DD")
-    //     currentDate.text(dayOfMonth);
-
-    // }
-
-    // setInterval(currentTime, 1000)
     var date = moment().format('dddd, MMMM Do, YYYY')
     currentDate.text(date)
     var currentTime = moment().hours()
@@ -25,15 +16,12 @@ $(document).ready(function () {
 
     /* Save Button Function
     1. make variable to select html save button 
-    2. make variable to  select html text area
-    3. make 3 variables for css color
-    4. make empty variable to save array of responses 
-    5. make function to save to local storage
-    
+    2. set prevent default
+    3. make variable to select the id of the area that was clicked on
+    4. save the value of the input field area to local storage
+    5. show the saved items from local storage upon page render
     */
     var saveButton = $(".saveBtn")
-    console.log(saveButton)
-
     saveButton.on('click', function (event) {
         event.preventDefault()
         var timeBlockId = $(this).attr('id')
@@ -49,13 +37,6 @@ $(document).ready(function () {
             $('#' + i + "").text(task)
         }
     }
-
-
-    // saveButton.addEventListener("click", function () {
-    //     console.log(saveButton)
-    //     hour12.style.backgroundColor ="pink";
-    // })
-
 
 
 
