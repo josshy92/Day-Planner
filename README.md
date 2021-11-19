@@ -1,5 +1,6 @@
 # Homework-05
 # Simple Work Day Scheduler
+This tool will allow you to save daily tasks as a simple planner using local storage to save your data.
 
 Screenshot: ![image](https://user-images.githubusercontent.com/88861538/139557370-b08e15d8-14de-4fe1-919e-dabcf4db1707.png)
 
